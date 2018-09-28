@@ -71,4 +71,8 @@ public extension Int {
 		return self.toDateComponents(type: .quarter)
 	}
 
+	/// Create a `DateComponents`with `self`value set as centuries
+	public var centuries: DateComponents {
+		return (self * 100).toDateComponents(type: .year)
+	}
 }
